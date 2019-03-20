@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+ <html en-us>
+     <head>
+         <title>Wizard Strength</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+         <meta charset="UTF-8">
+
+         <link href="assets/css/style.css">
+         <script
+                src="http://code.jquery.com/jquery-3.3.1.min.js"
+                 integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                    crossorigin="anonymous"></script>
+
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     </head>
+     <body background="assets/images/background.jpg">
+         <h1 class="text-center bg-dark text-danger pb-2">Wizard Strength</h1>
+         <div class="container">
+             <div class="row text-center">
+                 <div class="col-3">
+                        <button type="button" class="btn-lg btn-danger" id="TotalScore">Total Score</button>
+                 </div>
+                 <div class="col-6 ">
+                 <img src="assets/images/wizard.jpg" id="wizard" class="align-center rounded-circle" width="300" height="200">
+                </div>
+                <div class="col-3">
+                        <button type="button" class="btn-lg btn-danger" id="RandomNumber"></button>
+                 </div>
+             </div>
+            </div>
+            <div class="container mt-4 pt-4">
+             <div class="row text-center pt-4" id="items">
+                 <div class="col-3">
+                     <img src="assets/images/banana.png" width="150" height="150" id="banana">
+                 </div>
+                 <div class="col-3">
+                     <img src="assets/images/bejeweled_animated_gem_1_by_bedgear-d3a8yp4.gif" width="150" height="150" id="jewels">
+                 </div>
+                 <div class="col-3">
+                     <img src="assets/images/potions.gif" width="150" height="150" id="potions">
+                 </div>
+                 <div class="col-3">
+                     <img src="assets/images/wand.jpg" width="150" height="150" id="wand">
+                 </div>
+             </div>
+             </div>
+             <script src="./assets/javascript/game.js"></script>
+     </body>
+ </html>
