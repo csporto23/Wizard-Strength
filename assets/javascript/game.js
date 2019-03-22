@@ -7,7 +7,7 @@ $("#StartGame").on("click", function () {
     $("#TotalScore").html(userScore);    
 });
 
-$("#banana").bind("click", function () {
+$("#items").bind("click", function () {
     let item = Math.floor(Math.random() * (12) + 1);
     userScore += item;
     $("#TotalScore").html(userScore);
