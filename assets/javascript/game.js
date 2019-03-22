@@ -7,8 +7,6 @@ $("#StartGame").on("click", function () {
     $("#TotalScore").html(totalReset);    
 });
 
-let item = Math.floor(Math.random() * (12) + 1);
-
 $("#items").bind("click", function () {
     let item = Math.floor(Math.random() * (12) + 1);
     items = item+item+item+item;
