@@ -1,12 +1,12 @@
 <!DOCTYPE html>
  <html en-us>
      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
          <title>Wizard Strength</title>
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-         <meta charset="UTF-8">
-
-         <link href="./assets/css/style.css">
+         <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
          <script src="http://code.jquery.com/jquery-3.3.1.min.js"
                  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
                     crossorigin="anonymous"></script>
@@ -18,8 +18,8 @@
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
      </head>
-     <body background="assets/images/background.jpg">
-         <h1 class="text-center bg-dark text-danger pb-2">Wizard Strength</h1>
+     <body background="assets/images/background.jpg" >
+         <h2 class="text-center bg-dark text-danger pb-2 opacity-.5">Wizard Strength</h2>
          <div class="container">
              <div class="row text-center">
                  <div class="col-3">
@@ -33,33 +33,36 @@
                  </div>
              </div>
             </div>
-            <div class="container mt-4 pt-4">
-             <div class="row text-center pt-4" id="items">
+            <div class="container mt-4 pt-2">
+             <div class="row text-center pt-2" id="items">
                  <div class="col-3">
-                     <img src="assets/images/banana.png" class="rounded" width="150" height="150" id="banana">
+                     <img src="assets/images/banana.png" class="rounded" width="100" height="100" id="banana">
                  </div>
                  <div class="col-3">
-                     <img src="assets/images/bejeweled_animated_gem_1_by_bedgear-d3a8yp4.gif" class="rounded" width="150" height="150" id="jewels">
+                     <img src="assets/images/bejeweled_animated_gem_1_by_bedgear-d3a8yp4.gif" class="rounded" width="100" height="100" id="jewels">
                  </div>
                  <div class="col-3">
-                     <img src="assets/images/potions.gif" width="150" height="150" class="rounded" id="potions">
+                     <img src="assets/images/potions.gif" width="100" height="100" class="rounded" id="potions">
                  </div>
                  <div class="col-3">
-                     <img src="assets/images/wand.jpg" width="150" height="150" class="rounded" id="wand">
+                     <img src="assets/images/wand.jpg" width="100" height="100" class="rounded" id="wand">
                  </div>
              </div>
              </div>
                 <div class="row text-center mt-4">
                     <div class="col-3">
-        </div>
+                        <button type="button" class="btn-sm btn-primary" id="winner">Wins:</button>
+                 </div>
             <div class="col-6">
                     <button type="button" class="btn-lg btn-danger" id="StartGame">Start Game</button>
                 </div>
                     <div class="col-3"></div>
                 </div>
             <div class="row text-center mt-2">
-                <div class="col-3"></div>
-                <div class="col-6">
+                <div class="col-3">
+                    <button type="button" class="btn-sm btn-primary" id="winner">Loses:</button>
+             </div>
+                <div class="col-6 mb-2">
                         <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#exampleModal">
                                 Instructions
                     </button>
@@ -84,16 +87,6 @@
    </div>
                 </div>
             </div>
-            <div class="row">
-                <footer>
-                    <div class="col-6 text-danger" id="loses">
-                        loses:
-                    </div>
-                    <div class="col-6 text-danger" id="wins">
-                        wins:
-                    </div>
-                </footer>
-            </div>
-            <script src="./assets/javascript/game.js"></script>
+            <script type="text/javascript" src="./assets/javascript/game.js"></script>
         </body>
  </html>

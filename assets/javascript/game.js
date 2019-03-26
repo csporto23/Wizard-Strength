@@ -11,19 +11,20 @@ $("#StartGame").on("click", function () {
 
 
 
-$("#items").bind("click", function () {
+$("#items").on("click", function () {
     var item = Math.floor(Math.random() * (12) + 1);
     userScore += item;
     $("#TotalScore").html(userScore);
+    if ( userScore === random ) {
+        reset();
+   } 
 })
 
-const reset = function() {
-    userScore = 0;
-    random = 0;
-}
+//const reset = function() {
+  //  userScore = 0;
+    //random = 0;
+//}
 
-if (userScore === random) {
-     ($("#wins").html(wins));
-} else if (userScore > random) {
-    ($("#loses").html(loses));
-}
+//if ( userScore === random ) {
+  //   reset();
+//} 
